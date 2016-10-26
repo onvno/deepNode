@@ -35,3 +35,13 @@ var subfile = function(src) {
     })
 }
 exports.subfile = subfile;
+
+/**
+ * get:当前目录下子文件夹的完整目录
+ * 参考:http://stackoverflow.com/questions/30971088/nodejs-given-a-full-path-of-a-directory-how-to-get-a-list-of-all-subdirectori
+ * 代码暂不更
+ */
+
+/**
+ * 
+ */
