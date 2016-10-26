@@ -18,7 +18,7 @@ exports.rmdot = rmdot;
   * http://stackoverflow.com/questions/18112204/get-all-directories-within-directory-nodejs
   */
 var subdir = function(src) {
-  return fs.readdirSync(src)
+  return rmdot(fs.readdirSync(src))
     .filter(function(file){
       return fs.statSync(path.join(src,file)).isDirectory();
     })
@@ -29,7 +29,7 @@ exports.subdir = subdir;
  * get:当前目录下所文件
  */
 var subfile = function(src) {
-  return fs.readdirSync(src)
+  return rmdot(fs.readdirSync(src))
     .filter(function(file){
       return fs.statSync(path.join(src,file)).isFile();
     })
